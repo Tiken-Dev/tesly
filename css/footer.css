@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 28px 105px;
+}
+
+.footer__icons-left img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer__icons-left,
+.footer__icons-right {
+  display: flex;
+  gap: 80px;
+}
+
+.footer__icons-center {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+
+.footer__icons-center img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer__icons-center span::after {
+  content: "º";
+  color: #666666;
+}
+
+.icon-footer {
+  cursor: pointer;
+}
+
+.icon-footer:active {
+  transform: scale(.965);
+}

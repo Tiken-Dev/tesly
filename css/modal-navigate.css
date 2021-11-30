@@ -1,0 +1,76 @@
+.modal-navigate {
+  width: 340px;
+  height: 500px;
+  background-color: #F0F0F0;
+  margin-block-start: .75rem;
+  margin-inline-start: 2rem;
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+  transition: .3s;
+  opacity: 0;
+}
+
+.show-modal {
+  opacity: 1;
+}
+
+.modal-navigate__block {
+  display: flex;
+  padding: 25px;
+  gap: 27px;
+  align-items: center;
+  position: relative;
+}
+
+.modal-navigate__block .block__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 1.25rem;
+}
+
+.block__info span:not(:first-child) {
+  color: #909090;
+}
+
+.icon-sound {
+  position: absolute;
+  right: .5rem;
+  top: 1rem;
+  font-size: 2.5rem;
+  color: #909090;
+}
+
+.icon-battery-level {
+  font-size: 1.5rem;
+  color: #909090;
+  margin-block-start: 2px;
+}
+
+.icon-battery-level::after {
+  content: '78%';
+  font-family: var(--fontBase);
+  margin-inline-start: 10px;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 2px;
+}
+
+.modal-navigate__cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background-color: #C0C0C0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.modal-navigate__cancel:hover {
+  background-color: #000;
+  color: #FFF;
+  transition: .3s;
+}

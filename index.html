@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Tesly 3</title>
+</head>
+<body>
+    <aside class="sidebar">
+      <span class="firstNumber">63</span>
+      <div class="km-container">
+        <picture>
+          <img src="./assets/images/drive.png" alt="">
+        </picture>
+        <div class="velocity">
+          <span>km/h</span>
+        </div>
+        <div class="km-container__battery">
+          <span>362 km</span>
+          <picture>
+            <img src="./assets/images/battery.png" alt="">
+          </picture>
+        </div>
+      </div>
+
+      <picture class="imgSidebar">
+        <img src="./assets/images/img-sidebar.png" alt="">
+      </picture>
+
+      <div class="lastCharge-container">
+        <span class="hour">Since 1:34</span>
+        <div class="lastCharge-info">
+          <div class="infoBlock">
+            <p class="infoBlock-number">11.9</p>
+            <p class="infoBlock-unit">km</p>
+          </div>
+          <div class="infoBlock">
+            <p class="infoBlock-number">16</p>
+            <p class="infoBlock-unit">min</p>
+          </div>
+          <div class="infoBlock">
+            <p class="infoBlock-number">11</p>
+            <p class="infoBlock-unit">Wh/km</p>
+          </div>
+        </div>
+        <span class="divider"></span>
+        <span>Since last charge</span>
+      </div>
+      <div class="slider-bullet-list">
+        <div class="slider-bullet"></div>
+        <div class="slider-bullet active"></div>
+        <div class="slider-bullet"></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="header__container-left">
+          <i class="icon-lock"></i>
+          <span>10:21 AM</span>
+          <span>17ºC</span>
+          <img src="./assets/images/tesla-logo.png" alt="Tesla Logo">
+        </div>
+
+        <div class="header__container-right">
+          <i class="icon-bluetooth"></i>
+          <i class="icon-cell-signal"></i>
+        </div>
+      </header>
+
+      <div class="navigate" id="show-navigate">
+        <div class="navigate__container-left">
+          <i class="icon-union"></i>
+          <span>Navigate</span>
+        </div>
+        <div class="navigate__container-right">
+          <i class="icon-right-arrow"></i>
+        </div>
+      </div>
+
+      <div class="modal-navigate" id="modal-navigate">
+        <div class="modal-navigate__block">
+          <img src="./assets/images/right-turn.png" alt="Right Turn">
+          <div class="block__info">
+            <span>1.5mi</span>
+            <span>Exit 87</span>
+          </div>
+          <i class="icon-sound"></i>
+        </div>
+        <div class="modal-navigate__block">
+          <img src="./assets/images/road-left.png" alt="Right Turn">
+          <div class="block__info">
+            <span>.75mi</span>
+            <span>Highway 400</span>
+          </div>
+        </div>
+        <div class="modal-navigate__block">
+          <img src="./assets/images/road-right.png" alt="Right Turn">
+          <div class="block__info">
+            <span>18mi</span>
+            <span>Mansell Rd</span>
+          </div>
+        </div>
+        <div class="modal-navigate__block">
+          <img src="./assets/images//ubication.png" alt="Right Turn">
+          <div class="block__info">
+            <span>500ft</span>
+            <span>Eeletricity Charger</span>
+            <i class="icon-battery-level"></i>
+          </div>
+        </div>
+        <div class="modal-navigate__cancel" id="cancel-trip">
+          <span>cancel trip</span>
+        </div>
+      </div>
+
+      <div class="map-settings__container" id="settings-button">
+        <i class="icon-gear map-settings__button"></i>
+      </div>
+
+      <div class="modal-settings" id="modal-settings">
+        <div class="modal-settings__container">
+          <i class="icon-exit" id="close-modal"></i>
+          <div class="modal-settings__sidebar">
+            <nav class="sidebar__navigation">
+              <ul class="sidebar__list">
+                <li class="sidebar__item is-active" data-target="#controls">
+                  <i class="icon-small-toggle"></i>
+                  <span>Quick Controls</span>
+                </li>
+                <li class="sidebar__item">
+                  <i class="icon-lights"></i>
+                  <span>Lights</span>
+                </li>
+                <li class="sidebar__item" data-target="#locks">
+                  <i class="icon-lock"></i>
+                  <span>Locks</span>
+                </li>
+                <li class="sidebar__item">
+                  <i class="icon-display"></i>
+                  <span>Display</span>
+                </li>
+                <li class="sidebar__item">
+                  <i class="icon-car-small"></i>
+                  <span>Driving</span>
+                </li>
+                <li class="sidebar__item">
+                  <i class="icon-steering-wheel"></i>
+                  <span>Autopilot</span>
+                </li>
+                <li class="sidebar__item">
+                  <i class="icon-security"></i>
+                  <span>Safety & Security</span>
+                </li>
+                <li class="sidebar__item">
+                  <i class="icon-service"></i>
+                  <span>Service</span>
+                </li>
+              </ul>
+              <div class="sidebar__button">
+                <img src="./assets/icons/glovebox.svg" alt="">
+                <span>glovebox</span>
+              </div>
+            </nav>
+          </div>
+
+          <div class="modal-settings__options modal-settings__active" data-content id="controls">
+
+            <div class="options-section">
+              <h4>Headlights</h4>
+              <div class="options-section__navigation">
+                <ul class=navigation__list>
+                  <li class="nav__item">off</li>
+                  <li class="nav__item">parking</li>
+                  <li class="nav__item">on</li>
+                  <li class="nav__item is-selected">auto</li>
+                </ul>
+              </div>
+
+              <h3>Interior</h3>
+              <h4>Dome Lights</h4>
+              <div class="options-section__navigation bottom-nav">
+                <ul class=navigation__list>
+                  <li class="nav__item">off</li>
+                  <li class="nav__item">on</li>
+                  <li class="nav__item is-selected">auto</li>
+                </ul>
+              </div>
+            </div>
+            <div class="options-section__button">
+              <span>ambient lights</span>
+            </div>
+          </div>
+
+          <div class="modal-settings__options" data-content id="locks">
+            <div class="options-section locks-section">
+              <div class="options-section__block">
+                <div class="switch" id="walkup">
+                  <div class="switch-ball"></div>
+                </div>
+                <span>Walk Up Unlock</span>
+              </div>
+
+              <div class="options-section__block">
+                <div class="switch" id="walkaway">
+                  <div class="switch-ball"></div>
+                </div>
+                <span>Walk Away Unlock</span>
+              </div>
+
+              <div class="options-section__block">
+                <div class="switch" id="child">
+                  <div class="switch-ball"></div>
+                </div>
+                <span>Child Protection Lock</span>
+              </div>
+
+              <div class="options-section__block">
+                <div class="switch" id="unlock">
+                  <div class="switch-ball"></div>
+                </div>
+                <span>Unlock on Park</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__icons-left">
+        <img src="./assets/images/model3-icon.svg" class="icon-footer" alt="icon">
+        <i class="icon-footer icon-defrost"></i>
+        <i class="icon-footer icon-heater"></i>
+        <i class="icon-footer icon-seat-left"></i>
+        <i class="icon-footer icon-fan"></i>
+      </div>
+      <div class="footer__icons-center">
+        <i class="icon-footer icon-left-arrow"></i>
+        <span>20</span>
+        <img src="./assets/images/right-arrow.svg" class="icon-footer" alt="icon">
+      </div>
+      <div class="footer__icons-right">
+        <i class="icon-footer icon-seat-right"></i>
+        <i class="icon-footer icon-music"></i>
+        <i class="icon-footer icon-phone"></i>
+        <i class="icon-footer icon-volume"></i>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+:root {
+
+  /* FONTS */
+
+  --fontBase: 'Montserrat', sans-serif;
+  --medium20: medium 1.25rem var(--fontBase);
+  --medium26: medium 1.625rem var(--fontBase);
+  --semiBold14: 600 .875rem var(--fontBase);
+  --semiBold16: 600 1rem var(--fontBase);
+  --semiBold24: 600 1.5rem var(--fontBase);
+
+
+
+  /* COLORS */
+
+  --white: #fff;
+  --black: #000;
+  --gray: #808080;
+  --gray1: #909090;
+  --blue: #147BE4;
+  --sb-background: #F0F0F0;
+  --toggle-background: #DFDFDF;
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul li {
+  list-style: none;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "section1 section2"
+    "section1 section2"
+    "footer footer";
+  grid-template-columns: 459px 1fr;
+  grid-template-rows: 64px 1fr 80px;
+  block-size: 100vh;
+  inline-size: 100vw;
+  margin: 0;
+  font-family: var(--fontBase);
+}
+
+
+
+.sidebar {
+  background: #F0F0F0;
+  grid-area: section1;
+}
+
+.main {
+  background: lightgray;
+  grid-area: section2;
+  background: url("../assets/images/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.footer {
+  background: var(--black);
+  grid-area: footer;
+}
