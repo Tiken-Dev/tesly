@@ -72,27 +72,13 @@ tabs.forEach(tab => {
 
 
 
-
-
 // SWITCH BUTTONS //
 
-const walkup = document.getElementById('walkup');
-const walkaway = document.getElementById('walkaway');
-const child = document.getElementById('child');
-const unlock = document.getElementById('unlock');
 
-walkup.onclick = function () {
-  walkup.classList.toggle('actived')
-}
+let switcher = document.getElementsByClassName('switch');
 
-walkaway.onclick = function () {
-  walkaway.classList.toggle('actived')
-}
-
-child.onclick = function () {
-  child.classList.toggle('actived')
-}
-
-unlock.onclick = function () {
-  unlock.classList.toggle('actived')
+for (let i = 0; i < switcher.length; i++) {
+  switcher[i].onclick = function () {
+    switcher[i].classList.toggle('actived')
+  }
 }
